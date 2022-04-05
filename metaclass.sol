@@ -401,7 +401,7 @@ abstract contract ERC20Detailed is IERC20 {
     }
 }
 
-contract clock24 is ERC20Detailed, Ownable {
+contract MetaClass is ERC20Detailed, Ownable {
 
     using SafeMath for uint256;
     using SafeMathInt for int256;
@@ -411,7 +411,7 @@ contract clock24 is ERC20Detailed, Ownable {
     event LogRebase(uint256 indexed epoch, uint256 totalSupply);
 
     string public _name = "MetaClass";
-    string public _symbol = "MTEC";
+    string public _symbol = "MCLS";
     uint8 public _decimals = 5;
 
     IPancakeSwapPair public pairContract;
